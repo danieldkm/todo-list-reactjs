@@ -1,0 +1,72 @@
+.newTask {
+  margin-bottom: 4rem;
+}
+
+.newTask form {
+  height: 3.375rem;
+  display: grid;
+  grid-template-columns: 1fr 90px;
+  gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .newTask form {
+    grid-template-columns: 1fr;
+  }
+  .newTask {
+    margin-bottom: 6rem;
+  }
+}
+
+.newTask input {
+  background: var(--gray-500);
+  border: 1px solid var(--gray-700);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: var(--gray-100);
+  line-height: 1;
+}
+
+.newTask button {
+  background: var(--blue-dark);
+  border: 0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: var(--gray-100);
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+
+  transition: background-color 1s;
+}
+
+.newTask button:hover {
+  background: var(--blue);
+}
+
+.taskHeader {
+  margin: 1.5rem 0;
+}
+
+.taskHeader header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.taskHeader .taskCreated {
+  color: var(--blue)
+}
+
+.taskHeader .taskCompleted {
+  color: var(--purple)
+}
+
+.taskHeader span {
+  background: var(--gray-400);
+  padding: 0.125rem 0.5rem;
+  border-radius: 60rem;
+  color: var(--gray-200);
+}
